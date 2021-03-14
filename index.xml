@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Mar 2021 21:05:51 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Social Slider Widget &lt; 1.8.5 - Reflected XSS</title>
+      <link>http://example.org/posts/social_slider_widget_reflected_xss/</link>
+      <pubDate>Sun, 14 Mar 2021 21:05:51 +0800</pubDate>
+      
+      <guid>http://example.org/posts/social_slider_widget_reflected_xss/</guid>
+      <description>Plugin Information  Plugin Page: https://wordpress.org/plugins/instagram-slider-widget Tested Version: 1.8.4 Installs: 90000+  Description In the plugin settings page, the user input &amp;lsquo;token_error&amp;rsquo; parameter is directly echoed without being sanitized. This allows an attacker to deliver malicious content to the vulnerable page via a reflected XSS attack.
+Here&amp;rsquo;s the POC:
+/wp-admin/admin.php?page=settings-wisw&amp;amp;token_error=&amp;lt;script&amp;gt;alert(document.cookie);&amp;lt;/script&amp;gt; When the server responds, the injected payloads are executed by the victim&amp;rsquo;s browser.
+The vulnerability requires user interaction e.g. clicking a crafted link and only affects the WordPress administrators who are accessible to the plugin settings page (/wp-admin/admin.</description>
+    </item>
+    
+  </channel>
+</rss>
