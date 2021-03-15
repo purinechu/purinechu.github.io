@@ -17,10 +17,10 @@
       <pubDate>Sun, 14 Mar 2021 21:05:51 +0800</pubDate>
       
       <guid>https://purinechu.github.io/posts/social_slider_widget_reflected_xss/</guid>
-      <description>Plugin Information  Plugin Page: https://wordpress.org/plugins/instagram-slider-widget Tested Version: 1.8.4 Installs: 90000+  Description In the plugin settings page, the user input &amp;lsquo;token_error&amp;rsquo; parameter is directly echoed without being sanitized. This allows an attacker to deliver malicious content to the vulnerable page via a reflected XSS attack.
+      <description>Plugin Information  Plugin Page: https://wordpress.org/plugins/instagram-slider-widget Tested Version: 1.8.4 Patched Version: 1.8.5 Installs: 90000+  Description In the plugin settings page, the user input &amp;lsquo;token_error&amp;rsquo; parameter is directly echoed without being sanitized. This allows an attacker to deliver malicious content to the vulnerable page via a reflected XSS attack.
 Here&amp;rsquo;s the POC:
 /wp-admin/admin.php?page=settings-wisw&amp;amp;token_error=&amp;lt;script&amp;gt;alert(document.cookie);&amp;lt;/script&amp;gt; When the server responds, the injected payloads are executed by the victim&amp;rsquo;s browser.
-The vulnerability requires user interaction e.g. clicking a crafted link and only affects the WordPress administrators who are accessible to the plugin settings page (/wp-admin/admin.</description>
+The vulnerability requires user interaction e.</description>
     </item>
     
   </channel>
