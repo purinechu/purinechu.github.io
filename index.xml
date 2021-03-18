@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Social Slider Widget &lt; 1.8.5 - Reflected XSS</title>
+      <title>CVE-2021-24196 Social Slider Widget &lt; 1.8.5 - Reflected XSS</title>
       <link>https://purinechu.github.io/posts/social_slider_widget_reflected_xss/</link>
       <pubDate>Sun, 14 Mar 2021 21:05:51 +0800</pubDate>
       
